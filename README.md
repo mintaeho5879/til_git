@@ -195,11 +195,32 @@ git commit -m "[docs]: 브랜치 실습 test 생성하기"
 git branch test
 ```
 
-#### 4.7.2. 브랜치 이동하기
+#### 4.7.2. 브랜치 목록보기
 
-#### 4.7.3. 브랜치 삭제하기
+```bash
+git branch -v
+```
 
-#### 4.7.4. 브랜치 합치기
+#### 4.7.3. 브랜치 이동하기
+
+```bash
+git switch test
+```
+#### 4.7.4. 브랜치 삭제하기
+
+```bash
+git branch -D test
+git branch -v
+```
+
+#### 4.7.5. 브랜치 합치기
+
+- 브랜치를 하나로 합쳐주기
+- 주의사항 : `main 브랜치에서 Test 브랜치를 합쳐 줄 겁니다.`
+
+```bash
+git merge 합쳐주고자하는 브랜치명
+```
 # GitHub
 
 

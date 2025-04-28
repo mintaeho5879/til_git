@@ -191,7 +191,7 @@ git show 커밋아이디
 
 ```bash
 git add .
-git commit -m "[docs]: 브랜치 실습 test 생성하기"
+git commit -m "[docs]: 브랜치 실습 test 합치기"
 git branch test
 ```
 

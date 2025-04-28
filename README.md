@@ -238,6 +238,7 @@ git merge 합쳐주고자하는 브랜치명
 - 추후 GitHub 협업에서 상세히 알아보자.
 
 # GitHub
+
 ## 1. GitHub 회원가입하기
 
 - https://github.com
@@ -247,7 +248,6 @@ git merge 합쳐주고자하는 브랜치명
 - 만약 til_git 프로젝트 생성했다면 GitHub 에도 생성하자.
 - Public 으로 셋팅 : 외부로 소스 공개
 - description 은 작성해주자 : 프로젝트 설명
-
 
 ## 3. GitHub 인증하기
 
@@ -265,9 +265,9 @@ git merge 합쳐주고자하는 브랜치명
 - `remote` : 원격(인터넷)을 말합니다.
 - `add` : 추가하라
 - `origin`
-    - http 주소를 간략하게 별칭을 준 것입니다.
-    - 단어는 마음대로 하셔도 됩니다.
-    - `원격 이름`을 말함.
+  - http 주소를 간략하게 별칭을 준 것입니다.
+  - 단어는 마음대로 하셔도 됩니다.
+  - `원격 이름`을 말함.
 
 ```bash
 git remote add origin https://github.com/아이디/til_git.gitgit
@@ -281,7 +281,15 @@ git remote -v
 
 ### 4.3. 원격 저장소에 소스 등록하기
 
+- 습관적으로 하셨으면 좋은 작업 (Ctrl +S, 즉, 저장 후)
+
 ```bash
 git add .
 git commit -m "[docs]:최초등록"
+```
+
+- 소스 업로드를 `push 한다`라고 합니다.
+
+```bash
+git push -u origin main
 ```

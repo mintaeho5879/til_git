@@ -222,7 +222,7 @@ git branch -v
 git merge 합쳐주고자하는 브랜치명
 ```
 
-업데이트
+
 # GitHub
 
 

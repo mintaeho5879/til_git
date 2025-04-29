@@ -245,15 +245,15 @@ git merge 합쳐주고자하는 브랜치명
 
 ## 2. GitHub 프로젝트(Repository) 생성하기
 
-- 만약 til_git 프로젝트 생성했다면 GitHub 에도 생성하자.
-- Public 으로 셋팅 : 외부로 소스 공개
-- description 은 작성해주자 : 프로젝트 설명
+- 만약 til_git 프로젝트 생성해다면 GitHub 에도 동일하게 생성하자.
+- public 으로 셋팅 : 외부로 소스 공개
+- description 은 작성해 주자 : 프로젝트 설명
 
 ## 3. GitHub 인증하기
 
-### 3.1. 무조건 GitHub에 로그인 된 상태로 시도하셔야 합니다.
+### 3.1. 무조건 GitHub 에 로그인 된 상태로 시도하셔야 합니다.
 
-### 3.2. `윈도우 >자격 증명 관리자 >  Windosw 자격 증명` 에서 gitHub 확인
+### 3.2. `윈도우 > 자격 증명 관리자 > Windows 자격 증명 ` 에서 gitHub 확인
 
 - 새로 생성하시길 권장합니다.
 - PC 정리 또는 자리 이동시 반드시 삭제하셔야 합니다.
@@ -262,15 +262,15 @@ git merge 합쳐주고자하는 브랜치명
 
 ### 4.1. 원격 저장소 주소 지정하기
 
-- `remote` : 원격(인터넷)을 말합니다.
+- `remote` : 원격(인터넷) 을 말합니다.
 - `add` : 추가하라
 - `origin`
   - http 주소를 간략하게 별칭을 준 것입니다.
-  - 단어는 마음대로 하셔도 됩니다.
+  - 단어는 마음대로 하셔도 되요.
   - `원격 이름`을 말함.
 
 ```bash
-git remote add origin https://github.com/아이디/til_git.gitgit
+git remote add origin https://github.com/아이디/til_git.git
 ```
 
 ### 4.2. 원격 저장소 목록 보기
@@ -281,7 +281,7 @@ git remote -v
 
 ### 4.3. 원격 저장소에 소스 등록하기
 
-- 습관적으로 하셨으면 좋은 작업 (Ctrl +S, 즉, 저장 후)
+- 습관적으로 하셨으면 좋은 작업 (Ctrl + S, 즉, 저장 후)
 
 ```bash
 git add .
@@ -298,21 +298,25 @@ git push -u origin main
 
 ### 4.4. 원격 저장소 관리하기
 
+- 목록 보기
+
 ```bash
 git remote -v
 ```
 
-- 삭제하기
+- 삭제 하기
+
 ```bash
 git remote remove 원격이름
 ```
 
 - 추가하기
+
 ```bash
 git remote add 원격이름 https주소
 ```
 
-- 이름 바꾸기
+- 이름바꾸기
 
 ```bash
 git remote rename 옛이름 새이름
@@ -321,13 +325,41 @@ git remote rename 옛이름 새이름
 ### 4.5. 추천 작업 순서
 
 ```bash
-git add .
-git commit -m "[docs]:깃학습"
-git push origin main
+ git add .
+ git commit -m "[docs]:깃학습"
+ git push origin main
 ```
 
-## 5. 깃허브의 소스를 다운로드 받아서 작업하는 법
+## 5. 깃허브의 소스를 복사(Clone)해서 작업하는 법
 
 - 깃허브 주소를 주의하셔야 합니다.
 - 코드 소스 기준은 `https` 로 진행 중입니다.
-- 코드 소스 기준이 `ssh`면 인증을 다시 처리하는 과정 필요.
+- 코드 소스 기준이 `ssh` 면 인증을 다시 처리하는 과정 필요.
+
+### 5.1. 실습
+
+- 서울로 출장을 갔다. (PC 없이)
+- 서울 사무소에 PC 를 지급 받았다.
+- PC 에 환경 설정 진행(VSCode, Git)
+- /stdent/`test 폴더` 생성
+- gitHub 사이트에 프로젝트를 `clone` 한다.
+- gitHub 사이트에 Repository 를 `clone` 한다.
+
+### 5.2. clone
+
+```bash
+git clone 깃허브주소 .
+```
+
+### 5.3. clone 이후의 작업
+
+```bash
+git status
+git branch -v
+git branch 브랜치명
+git switch 브랜치명
+작업진행
+git add .
+git commit -m "작업내용"
+git push origin 브랜치명
+```
